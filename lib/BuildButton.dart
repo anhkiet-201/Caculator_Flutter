@@ -64,4 +64,10 @@ class _BuildButtonState extends State<BuildButton> with SingleTickerProviderStat
       },
     );
   }
+
+  @override
+  void dispose() {
+    animationController.dispose();
+    super.dispose();
+  }
 }
