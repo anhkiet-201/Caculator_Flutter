@@ -354,5 +354,10 @@ class _CalculatorState extends State<Calculator> with SingleTickerProviderStateM
       ),
     );
   }
-  
+
+  @override
+  void dispose() {
+    animationController.dispose();
+    super.dispose();
+  }
 }
